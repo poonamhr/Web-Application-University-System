@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    background-image: url(../pictures/teacher_student_2.jpg);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dashboard-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18), 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+.dash-title {
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.role-text {
+    color: var(--blue-dark);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.dash-btn {
+    background: #67573f;
+    ;
+    border: none;
+    color: white !important;
+    width: 100%;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.dash-btn:hover {
+    transform: translateY(-3px);
+    color: whitesmoke !important;
+}
+
+.icon-badge {
+    font-size: 1.5rem;
+}

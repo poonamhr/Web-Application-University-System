@@ -1,0 +1,277 @@
+/* lab.html */
+
+.click-box {
+    max-width: 1140px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.click-title {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+    color: #67573f;
+}
+
+.click-title:hover {
+    color: var(--blue-dark);
+}
+
+.arrow {
+    font-size: 1.6rem;
+    transition: transform 0.3s;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.intro-text p,
+.labs-table td p {
+    color: black;
+}
+
+.intro-text b {
+    color: black;
+}
+
+table.labs-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+table.labs-table td {
+    padding: 20px;
+    vertical-align: top;
+    background: #fdfdfd;
+    border-radius: 15px;
+}
+
+table.labs-table img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+table.labs-table img:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    color: var(--blue-dark);
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 1.25rem;
+    color: #615647ff;
+    line-height: 1.8;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* library.css */
+.intro-text p {
+    font-size: 1.25rem;
+    color: #000;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.library-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.library-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    transition: 0.35s ease;
+}
+
+.library-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+}
+
+.library-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.library-card .card-body {
+    padding: 22px;
+}
+
+.library-card h3 {
+    font-size: 1.5rem;
+    color: #0F4C82;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.library-card p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+    .library-card img {
+        height: 200px;
+    }
+
+    .library-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .intro-text p {
+        font-size: 1.15rem;
+    }
+}
+
+/* sports.css */
+.hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+    letter-spacing: 1px;
+}
+
+.section {
+    padding: 70px 20px;
+    position: relative;
+}
+
+.section:nth-of-type(even) {
+    background: #e7eff8;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #0F4C82;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.section-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+}
+
+.section-content .text {
+    flex: 1 1 420px;
+    font-size: 1.15rem;
+    color: #2e3a59;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section-content .image {
+    flex: 1 1 420px;
+}
+
+.section img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    transition: transform 0.55s ease, box-shadow 0.55s ease;
+}
+
+.section img:hover {
+    transform: translateY(-12px) scale(1.06);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 320px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section h2 {
+        font-size: 1.9rem;
+    }
+
+    .section-content {
+        gap: 25px;
+    }
+
+    .section-content .text {
+        font-size: 1.05rem;
+    }
+}
